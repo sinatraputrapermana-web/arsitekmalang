@@ -1100,9 +1100,10 @@ function renderSidebarArticles(currentId) {
   sidebarContainer.innerHTML = sortedIds.map(relId => {
     const relArt = ARTICLES[relId];
     if (!relArt) return '';
+    const imgSrc = relArt.img ? (relArt.img.startsWith('http') ? relArt.img : (relArt.img.startsWith('/') ? relArt.img : '/' + relArt.img)) : 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80';
     return `
       <div class="d-flex gap-3 align-items-start p-2 rounded hover-bg-light" style="cursor:pointer;" onclick="location.href='blog-detail.html?id=${relId}'">
-        <img src="${relArt.img}" alt="${relArt.title}" style="width:60px; height:60px; border-radius:8px; object-fit:cover; flex-shrink:0;">
+        <img src="${imgSrc}" alt="${relArt.title}" style="width:60px; height:60px; border-radius:8px; object-fit:cover; flex-shrink:0;" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80';">
         <div>
           <p class="fw-700 extra-small mb-1 lh-sm text-dark" style="font-size:0.82rem;">${relArt.title}</p>
           <small class="text-muted" style="font-size:0.7rem;"><i class="bi bi-calendar3 me-1"></i>${relArt.date}</small>
@@ -1758,55 +1759,55 @@ function initPopularArticlesSort() {
       url: 'arsitek-malang-terkenal.html',
       title: 'Rekomendasi Jasa Arsitek Malang Terkenal untuk Bangun Rumah Mewah & Komersial',
       date: '25 Agt 2026',
-      img: 'assets/img/portofolio-arsitektur-malang.webp'
+      img: '/assets/img/portofolio-arsitektur-malang.webp'
     },
     {
       url: 'desain-rumah-minimalis-arsitek-malang.html',
       title: 'Katalog Desain Rumah Minimalis Modern karya Arsitek Malang Terkenal',
       date: '25 Agt 2026',
-      img: 'assets/img/katalog-rumah-minimalis-2-lantai.webp'
+      img: '/assets/img/katalog-rumah-minimalis-2-lantai.webp'
     },
     {
       url: 'paket-jasa-arsitek-malang.html',
       title: 'Spesifikasi Paket Jasa Desain Bangunan Arsitek Malang Terkenal',
       date: '25 Agt 2026',
-      img: 'assets/img/rancang-bangun-terintegrasi.webp'
+      img: '/assets/img/rancang-bangun-terintegrasi.webp'
     },
     {
       url: 'jasa-desain-bangunan-komersial-dan-cafe-malang.html',
       title: 'Jasa Desain Bangunan Komersial dan Cafe dari Arsitek Malang',
       date: '23 Agt 2026',
-      img: 'assets/img/jasa-desain-bangunan-komersial-cafe.webp'
+      img: '/assets/img/jasa-desain-bangunan-komersial-cafe.webp'
     },
     {
       url: 'desain-rumah-minimalis-mewah-malang.html',
       title: 'Produk Desain Rumah Minimalis Mewah Karya Arsitek Malang',
       date: '23 Agt 2026',
-      img: 'assets/img/desain-rumah-minimalis-mewah-malang.webp'
+      img: '/assets/img/desain-rumah-minimalis-mewah-malang.webp'
     },
     {
       url: 'arsitek-terbaik-di-malang.html',
       title: 'Arsitek Terbaik di Malang: Layanan Desain dan Bangun',
       date: '23 Agt 2026',
-      img: 'assets/img/arsitek-terbaik-malang.webp'
+      img: '/assets/img/arsitek-terbaik-malang.webp'
     },
     {
       url: 'tren-desain-rumah-2026.html',
       title: 'Tren Desain Rumah 2026: Menyatukan Alam dan Teknologi',
       date: '22 Agt 2026',
-      img: 'assets/img/tren-desain-rumah-2026.webp'
+      img: '/assets/img/tren-desain-rumah-2026.webp'
     },
     {
       url: 'panduan-memilih-arsitek-malang.html',
       title: 'Pentingnya Menggunakan Jasa Arsitek Profesional',
       date: '21 Agt 2026',
-      img: 'assets/img/panduan-arsitek-profesional.webp'
+      img: '/assets/img/panduan-arsitek-profesional.webp'
     },
     {
       url: 'estimasi-biaya-bangun-rumah-malang.html',
       title: 'Panduan Material Ramah Lingkungan untuk Konstruksi',
       date: '21 Agt 2026',
-      img: 'assets/img/material-ramah-lingkungan-konstruksi.webp'
+      img: '/assets/img/material-ramah-lingkungan-konstruksi.webp'
     }
   ];
 
@@ -1819,15 +1820,18 @@ function initPopularArticlesSort() {
     const sortedByViews = [...articlesData].sort((a, b) => b.views - a.views);
     const popularList = sortedByViews.slice(0, 4);
 
-    popularContainer.innerHTML = popularList.map(item => `
-      <div class="d-flex gap-3 align-items-start" style="cursor:pointer;" onclick="location.href='${item.url}'">
-        <img src="${item.img}" alt="${item.title}" style="width:64px; height:64px; border-radius:8px; object-fit:cover; flex-shrink:0;">
-        <div>
-          <p class="fw-700 extra-small mb-1 lh-sm">${item.title}</p>
-          <small class="text-muted">${item.date}</small>
+    popularContainer.innerHTML = popularList.map(item => {
+      const imgSrc = item.img.startsWith('http') ? item.img : (item.img.startsWith('/') ? item.img : '/' + item.img);
+      return `
+        <div class="d-flex gap-3 align-items-start" style="cursor:pointer;" onclick="location.href='${item.url}'">
+          <img src="${imgSrc}" alt="${item.title}" style="width:64px; height:64px; border-radius:8px; object-fit:cover; flex-shrink:0;" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=300&q=80';">
+          <div>
+            <p class="fw-700 extra-small mb-1 lh-sm">${item.title}</p>
+            <small class="text-muted">${item.date}</small>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   } catch (e) {
     console.warn('Popular sort error:', e);
   }
