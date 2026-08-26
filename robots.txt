@@ -1,0 +1,10 @@
+# robots.txt — Arsitek Malang
+# https://arsitekmalang.web.id
+
+# Izinkan semua mesin pencari mengindeks seluruh halaman dan aset (CSS/JS)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://arsitekmalang.web.id/sitemap.xml
+
