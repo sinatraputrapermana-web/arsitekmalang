@@ -320,8 +320,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -404,8 +404,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -473,8 +473,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -546,8 +546,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -615,8 +615,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -684,8 +684,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -753,8 +753,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -822,8 +822,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
@@ -916,8 +916,8 @@ const ARTICLES = {
       <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Penulis Arsitek Malang" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
         <div>
-          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Tim Redaksi Arsitek Malang</h6>
-          <p class="text-muted extra-small mb-0">Tim ahli arsitektur dan konstruksi bangunan berpengalaman 10+ tahun di Malang Raya.</p>
+          <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+          <p class="text-muted extra-small mb-0">Arsitek Principal &amp; Lead Structural Estimator berpengalaman 10+ tahun di Malang Raya, spesialis desain tropis modern, RAB presisi, dan legalitas PBG/SIMBG.</p>
         </div>
       </div>
     `
