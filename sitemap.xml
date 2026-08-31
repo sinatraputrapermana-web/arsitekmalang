@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -251,6 +251,24 @@
   <url>
     <loc>https://arsitekmalang.web.id/desain-rumah-split-level-lowokwaru-malang.html</loc>
     <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsitekmalang.web.id/filosofi-desain-maroon-arsitek-tropis-modern-minimalis.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsitekmalang.web.id/review-portfolio-rumah-minimalis-industrial-araya-malang.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsitekmalang.web.id/desain-rumah-tropis-modern-karangploso-tanpa-ac.html</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
