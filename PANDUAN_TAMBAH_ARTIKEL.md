@@ -14,25 +14,68 @@ Tolong tambahkan artikel blog baru sesuai dengan SOP di PANDUAN_TAMBAH_ARTIKEL.m
 - Judul / Topik : [Contoh: Panduan Desain Villa Modern Kontemporer di Lahan Miring Batu Malang]
 - Kategori      : [Contoh: Jasa Arsitek / Desain Rumah / Tips Renovasi / Legalitas PBG / Konstruksi / Desain Interior]
 - Kata Kunci    : [Contoh: desain villa batu malang, arsitek villa lahan miring, konstruksi villa kontur]
-- Gambar Utama  : [Contoh: assets/img/villa-kontemporer-batu.webp]
+- Gambar Utama  : [Opsional: Jika tidak diisi, Gemini/AI wajib men-generate gambar baru yang sesuai isi artikel]
 ```
-*(Jika salah satu data di atas tidak diisi oleh pengguna, asisten AI wajib menentukan konten terbaik secara otomatis yang relevan dengan pilar bisnis Arsitek Malang).*
+*(Jika salah satu data di atas tidak diisi oleh pengguna, asisten AI/Gemini wajib menentukan konten terbaik serta men-generate gambar fotorealistik berkualitas tinggi yang 100% relevan dengan isi dan topik artikel).*
 
 ---
 
 ## 📋 DAFTAR CHECKLIST WAJIB (WORKFLOW LENGKAP)
 
-Setiap penambahan artikel baru **WAJIB** mengeksekusi 5 langkah berikut secara tuntas:
+Setiap penambahan artikel baru **WAJIB** mengeksekusi 6 langkah berikut secara tuntas:
 
-1. **Membuat File HTML Artikel Baru (`[slug-artikel].html`)** di root project sesuai anatomi dan template master.
-2. **Menyesuaikan Tanggal Secara Otomatis** dengan tanggal hari saat pembuatan artikel (misal tanggal saat ini `31 Agustus 2026`).
-3. **Mendaftarkan Artikel Baru ke Halaman [blog.html](file:///d:/Magang%20Industri/arsitekmalangweb/arsitekmalang/blog.html)**:
-   - Tambahkan kartu artikel baru pada urutan teratas dalam container `<div class="row g-4">`.
+1. **Men-generate Gambar yang Sesuai Isi Artikel Menggunakan Gemini (`generate_image` / AI Image Generation)**:
+   - Buat **Gambar Utama (Featured Image)**: `assets/img/[slug-artikel]-01.webp` (Landscape 16:9) yang merepresentasikan konsep utama artikel secara visual dan fotorealistik arsitektur.
+   - Buat **Gambar Ilustrasi Pendukung (Body Image)**: `assets/img/[slug-artikel]-02.webp` (Landscape 16:9 atau 4:3) yang memperjelas detail teknis/interior/fasad/konstruksi yang dibahas pada artikel.
+   - Simpan gambar ke direktori `assets/img/` dengan penamaan SEO-friendly berbasis slug artikel.
+2. **Membuat File HTML Artikel Baru (`[slug-artikel].html`)** di root project sesuai anatomi dan template master, dengan menyematkan gambar-gambar yang telah dibuat.
+3. **Menyesuaikan Tanggal Secara Otomatis** dengan tanggal hari saat pembuatan artikel (misal tanggal saat ini `31 Agustus 2026`).
+4. **Mendaftarkan Artikel Baru ke Halaman [blog.html](file:///d:/Magang%20Industri/arsitekmalangweb/arsitekmalang/blog.html)**:
+   - Tambahkan kartu artikel baru pada urutan teratas dalam container `<div class="row g-4">` menggunakan thumbnail `[slug-artikel]-01.webp`.
    - Update featured card (jika artikel tersebut dijadikan artikel sorotan terbaru).
-4. **Mendaftarkan URL Baru ke [sitemap.xml](file:///d:/Magang%20Industri/arsitekmalangweb/arsitekmalang/sitemap.xml)** beserta update tag `<lastmod>` untuk URL baru dan URL `blog.html`.
-5. **Menjaga Internal Linking (Cross-linking & Topic Silo)**:
+5. **Mendaftarkan URL Baru ke [sitemap.xml](file:///d:/Magang%20Industri/arsitekmalangweb/arsitekmalang/sitemap.xml)** beserta update tag `<lastmod>` untuk URL baru dan URL `blog.html`.
+6. **Menjaga Internal Linking (Cross-linking & Topic Silo)**:
    - Mengarahkan tautan ke *Money Pages* layanan utama (`jasa-arsitek.html`, `kontraktor-rumah.html`, `kontraktor-bangunan.html`, `renovasi-bangunan.html`, `desain-interior.html`).
    - Menyisipkan tautan silang ke artikel relevan lainnya pada blok *Baca Juga* dan *Rekomendasi Paket Layanan*.
+
+---
+
+## 🖼️ STANDAR GENERASI & OPTIMASI GAMBAR DENGAN GEMINI
+
+Setiap artikel blog di website **Arsitek Malang** wajib memiliki visual arsitektur yang estetik, fotorealistik, dan memiliki *WOW factor* tinggi. Visual yang kuat meningkatkan *dwell time* pengunjung, kredibilitas brand, dan performa SEO artikel.
+
+### 1. Jumlah dan Peran Gambar Wajib (Minimal 2 Gambar per Artikel)
+| Tipe Gambar | Penamaan File | Aspek Rasio | Penempatan di Website | Konten Visual yang Ditampilkan |
+| :--- | :--- | :--- | :--- | :--- |
+| **Gambar Utama (Featured Image)** | `assets/img/[slug]-01.webp` | `16:9` (Landscape) | • Header artikel (`article-image-wrap`)<br>• Open Graph (`og:image`) & Twitter Card<br>• Structured Data `BlogPosting`<br>• Thumbnail Card di `blog.html` | Tampilan fasad bangunan utama, eksterior arsitektur tropis/modern, atau keseluruhan konsep desain yang menjadi topik inti artikel. |
+| **Gambar Pendukung (Body Image)** | `assets/img/[slug]-02.webp` | `16:9` atau `4:3` | • Bagian tengah artikel (setelah H3 Subjudul 1) | Detail spesifik artikel: interior ruangan, sistem retaining wall/pondasi, material finishing, bukaan sirkulasi udara, atau suasana detail arsitektural. |
+
+### 2. Format Prompt Gemini untuk Generasi Gambar (`generate_image`)
+Gunakan formula prompt arsitektur profesional berikut saat men-generate gambar dengan Gemini:
+
+```text
+[Subjek Bangunan/Ruang] + [Gaya Arsitektur & Material] + [Konteks Lingkungan & Cuaca] + [Pencahayaan & Suasana] + [Sudut Pengambilan Kamera] + [Kualitas Visual]
+```
+
+#### 📌 Contoh Template Prompt Sesuai Topik Artikel:
+- **Artikel Desain Villa Lahan Miring / Kontur (Batu/Malang):**
+  > *"Architectural photography of a luxury modern tropical villa built on a steep slope in Batu Malang East Java. Multi-level split structure, cantilevered concrete decks, expansive glass walls, natural volcanic stone and warm teak wood elements, infinity plunge pool overlooking misty mountain valley, lush tropical pines, soft golden hour sunlight, ultra realistic, 8k resolution, architectural digest style, no people, wide angle."*
+- **Artikel Konstruksi / Retaining Wall / Pondasi:**
+  > *"Close-up architectural photograph of a high-end reinforced concrete and natural river stone retaining wall on a terraced slope residential project in Malang. Proper drainage weep holes visible, clean modern architectural detailing, lush green landscaping at the perimeter, overcast bright daylight, professional construction photography, realistic textures."*
+- **Artikel Desain Rumah Tropis Modern Minimalis:**
+  > *"Exterior architectural photography of an elegant 2-story modern tropical house in Lowokwaru Malang. Wide roof eaves for rain protection, large black aluminium sliding glass doors, wooden louvers for cross ventilation, private inner courtyard garden with tropical plants, bright warm morning lighting, clean minimalist aesthetics, photorealistic 8k."*
+- **Artikel Desain Interior (Dapur / Ruang Tamu / Master Bedroom):**
+  > *"Interior design photography of a luxury clean minimalist open-plan living room and kitchen in Malang residence. Seamless marble island, warm wood cabinetry, hidden warm LED strip lighting, large floor-to-ceiling windows showing green garden, Japandi and modern tropical fusion, photorealistic, pristine architectural magazine quality."*
+- **Artikel Legalitas PBG / SIMBG / Kantor Konsultan Arsitek:**
+  > *"Architectural firm studio workspace in Malang. Wooden drafting tables with rolled blueprints, architectural 3D scale models of modern tropical houses, laptop with CAD drawings, stylish minimalist interior with exposed brick and indoor plants, soft natural daylight pouring in, professional architectural office vibe."*
+
+### 3. Ketentuan Teknis dan SEO Gambar
+1. **Bebas Watermark & Teks**: Pastikan gambar bersih tanpa ada teks buatan, logo acak, atau bingkai perangkat (kecuali jika diminta khusus).
+2. **Format & Kompresi**: Simpan dalam format `.webp` (direkomendasikan) atau `.jpg`/`.png` terkompresi dengan baik untuk menjaga kecepatan loading halaman (Google PageSpeed score tinggi).
+3. **Penamaan File Relevan**: Gunakan slug artikel yang kaya kata kunci (Contoh: `desain-rumah-split-level-lowokwaru-01.webp`, `biaya-renovasi-rumah-2-lantai-malang-02.webp`).
+4. **Optimasi Alt-Text (`alt=""`)**: 
+   - Gambar 1: `alt="[Judul Lengkap Artikel] – Konsep Desain Arsitek Malang"`
+   - Gambar 2: `alt="Detail [Topik Teknis/Interior/Konstruksi] Proyek Arsitek Malang"`
 
 ---
 
