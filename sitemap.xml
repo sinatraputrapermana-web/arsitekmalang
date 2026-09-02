@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -287,6 +287,27 @@
   <url>
     <loc>https://arsitekmalang.web.id/rincian-estimasi-biaya-bangun-rumah-per-m2-pakis-2026.html</loc>
     <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Artikel Hari 6: Menghitung RAB Bangun Rumah di Lahan Miring Malang -->
+  <url>
+    <loc>https://arsitekmalang.web.id/menghitung-rab-bangun-rumah-lahan-miring-malang.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Artikel Hari 6: Pilihan Material Semen dan Bata untuk Fasad Rumah Mewah Malang -->
+  <url>
+    <loc>https://arsitekmalang.web.id/pilihan-material-semen-bata-fasad-rumah-mewah-malang.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Artikel Hari 6: Apakah Renovasi Rumah di Malang Wajib Mengurus PBG -->
+  <url>
+    <loc>https://arsitekmalang.web.id/apakah-renovasi-rumah-malang-wajib-pbg.html</loc>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
