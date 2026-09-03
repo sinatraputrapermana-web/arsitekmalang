@@ -134,18 +134,18 @@ File artikel baru harus memiliki struktur layout persis seperti standar artikel 
 1. **Meta Bar**: Tanggal hari ini (`DD MMMM YYYY`), Penulis `Muhammad Musyaffa`, Status Peninjau: `<i class="bi bi-patch-check me-1"></i>Ditinjau oleh Arsitek Berlisensi IAI Malang`.
 2. **Main Title Heading (`<h1>`)**: `fw-800 mb-4` dengan gaya tipografi tegas.
 3. **Featured Image Wrap**: Kartu gambar utama dengan sudut melengkung `rounded-4 shadow-sm` dan alt-text kaya kata kunci.
-4. **Summary Box (Ringkasan Inti)**: Box p-4 rounded-3 latar `#f8fafc` dengan border kiri `border-left: 4px solid var(--accent-color);`, memuat icon `<i class="bi bi-bookmark-check-fill text-primary-custom me-2"></i>Ringkasan Inti` dan 4–5 butir poin kesimpulan.
-5. **Table of Contents (Daftar Isi Artikel)**: Box border putih rapi dengan daftar terurut (`<ol>`) anchor links `#sec-1`, `#sec-2`, `#sec-3`, `#sec-4`, `#sec-5`.
+4. **Summary Box (Ringkasan Inti)**: Box p-4 rounded-3 latar `#f8fafc` dengan border kiri `border-left: 4px solid var(--accent-color);`, memuat icon `<i class="bi bi-bookmark-check-fill text-primary-custom me-2"></i>Ringkasan Inti` dan 4–5 butir poin ringkasan utama.
+5. **Table of Contents (Daftar Isi Artikel)**: Box border putih rapi dengan daftar terurut (`<ol>`) anchor links `#sec-1`, `#sec-2`, `#sec-3`, `#sec-4` (tanpa tautan kesimpulan).
 6. **Lead Paragraph**: Paragraf pembuka berbobot dengan gaya lead `fs-5 fw-500`.
-7. **Isi Artikel (Minimal 4–5 Subjudul H3)**:
+7. **Isi Artikel (Minimal 3–4 Subjudul H3 + FAQ)**:
    - `<h3 id="sec-1">`: Pembahasan fondasi teori / masalah lapangan di Malang.
    - Gambar teknis / ilustrasi tambahan (`article-image-wrap`).
    - `<h3 id="sec-2">`: Solusi desain arsitektural & teknik eksekusi.
    - **Pro Tip Box (Catatan Arsitek Malang)**: Kotak biru muda bergaris tepi aksen memuat tips praktis dari arsitek.
    - **Inline Callout "Baca Juga"**: Box tautan silang ke 2 artikel blog relevan lainnya.
    - `<h3 id="sec-3">`: Aspek legalitas (PBG/SIMBG), struktur bangunan, atau efisiensi anggaran.
-   - `<h3 id="sec-4">`: **FAQ Mini**: 3 pertanyaan dan jawaban teknis paling sering diajukan klien.
-   - `<h3 id="sec-5">`: **Kesimpulan Praktis**.
+   - `<h3 id="sec-4">`: **FAQ (Pertanyaan Sering Diajukan)**: 3 pertanyaan dan jawaban teknis paling sering diajukan klien.
+   - ⚠️ **ATURAN WAJIB: TIDAK PERLU KESIMPULAN**: **Dilarang keras / TIDAK PERLU menambahkan subjudul "Kesimpulan" atau "Kesimpulan Praktis"** di bagian akhir artikel maupun di dalam Daftar Isi (TOC). Artikel langsung ditutup setelah bagian FAQ, lalu langsung tersambung ke CTA Box.
 8. **CTA Box Interaktif**: Gradien halus aksen dengan headline konsultasi dan tombol WhatsApp langsung memanggil fungsi `openWA('Konsultasi [Topik Artikel]')`.
 9. **Author Bio Card**: Kartu profil Muhammad Musyaffa (Tim Riset Arsitektur Maroon Arsitek Malang / Spesialis Legalitas PBG & Konstruksi).
 10. **Rekomendasi Paket Layanan Sesuai Bacaan**: 2 kartu layanan terkait (misal: *Paket Jasa Arsitek 3D Komplit* & *Paket Kontraktor Bangun Rumah*) lengkap dengan tombol detail paket dan tombol konsultasi WA.
@@ -368,7 +368,6 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
                   <li><a href="#sec-2" class="text-primary-custom text-decoration-none fw-600">2. {{TOC_TITLE_2}}</a></li>
                   <li><a href="#sec-3" class="text-primary-custom text-decoration-none fw-600">3. {{TOC_TITLE_3}}</a></li>
                   <li><a href="#sec-4" class="text-primary-custom text-decoration-none fw-600">4. FAQ (Pertanyaan Sering Diajukan)</a></li>
-                  <li><a href="#sec-5" class="text-primary-custom text-decoration-none fw-600">5. Kesimpulan Praktis</a></li>
                 </ol>
               </div>
 
@@ -425,9 +424,7 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
               <p><strong>{{FAQ_TANYA_3}}</strong><br>
               {{FAQ_JAWAB_3}}</p>
 
-              <!-- SUBJUDUL 5 (KESIMPULAN) -->
-              <h3 id="sec-5" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">5. Kesimpulan Praktis</h3>
-              <p>{{PARAGRAF_KESIMPULAN}}</p>
+              <!-- CATATAN: TIDAK PERLU KESIMPULAN / KESIMPULAN PRAKTIS (LANGSUNG KE CTA BOX) -->
 
               <!-- CTA BOX -->
               <div class="cta-box p-4 my-4 rounded-3 text-center border shadow-sm" style="background: linear-gradient(135deg, var(--accent-light) 0%, #ffffff 100%); border-color: var(--accent-color) !important;">
