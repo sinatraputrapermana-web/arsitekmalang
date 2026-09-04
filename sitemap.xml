@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -332,5 +332,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <!-- Artikel Hari 9: Kenapa Memilih Jasa Arsitek Malang Bergaya Tropis Minimalis -->
+  <url>
+    <loc>https://arsitekmalang.web.id/kenapa-memilih-jasa-arsitek-malang-tropis-minimalis.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Artikel Hari 9: Insight Desain Minimalis dari Portofolio Rumah Industrial Araya -->
+  <url>
+    <loc>https://arsitekmalang.web.id/insight-desain-minimalis-portofolio-industrial-araya.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <!-- Artikel Hari 9: Desain Rumah Tropis Modern di Sukun Malang Tanpa AC -->
+  <url>
+    <loc>https://arsitekmalang.web.id/desain-rumah-tropis-modern-sukun-malang-tanpa-ac.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
 </urlset>
+
