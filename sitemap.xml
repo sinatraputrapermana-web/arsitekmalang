@@ -7,7 +7,7 @@
   <!-- Halaman Beranda (Prioritas Tertinggi) -->
   <url>
     <loc>https://arsitekmalang.web.id/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -414,6 +414,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/memahami-kontur-tanah-malang-lahan-miring-dau.html</loc>
     <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel Pilar: Jasa Arsitek Malang Terpercaya, Garansi Struktur 2026 -->
+  <url>
+    <loc>https://arsitekmalang.web.id/jasa-arsitek-malang.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel Cluster 1: Kontrak Arsitek Malang: Termin Bayar & Jaminan Revisi -->
+  <url>
+    <loc>https://arsitekmalang.web.id/kontrak-arsitek-malang.html</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
