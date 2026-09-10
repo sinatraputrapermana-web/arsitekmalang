@@ -6,6 +6,7 @@
 - **Saran Permalink:** arsitekmalang.web.id/jasa-arsitek-malang
 - **Primary Keyword:** jasa arsitek malang
 - **Secondary Keyword:** arsitek profesional Malang, jasa desain rumah Malang, konsultan arsitek Malang
+- **Penulis:** Naura Regyna Putri
 
 ---
 

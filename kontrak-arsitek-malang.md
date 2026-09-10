@@ -6,6 +6,7 @@
 - **Saran Permalink:** arsitekmalang.web.id/kontrak-arsitek-malang
 - **Primary Keyword:** kontrak arsitek malang
 - **Secondary Keyword:** termin pembayaran arsitek, kontrak kerja jasa arsitek, jaminan revisi desain
+- **Penulis:** Naura Regyna Putri
 
 ---
 

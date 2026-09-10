@@ -7,7 +7,7 @@
   <!-- Halaman Beranda (Prioritas Tertinggi) -->
   <url>
     <loc>https://arsitekmalang.web.id/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -430,6 +430,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/kontrak-arsitek-malang.html</loc>
     <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel Cluster 2: Konsultasi Arsitek Malang: 5 Tahapan Desain Rumah -->
+  <url>
+    <loc>https://arsitekmalang.web.id/konsultasi-arsitek-malang.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel Cluster 3: Portofolio Arsitek Malang: Desain Rumah Tropis Modern -->
+  <url>
+    <loc>https://arsitekmalang.web.id/portofolio-arsitek-malang.html</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

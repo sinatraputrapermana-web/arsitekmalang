@@ -28,7 +28,7 @@ Setiap penambahan artikel baru **WAJIB** mengeksekusi 6 langkah berikut secara t
    - Buat **Gambar Utama (Featured Image)**: `assets/img/[slug-artikel]-01.webp` (Landscape 16:9) yang merepresentasikan konsep utama artikel secara visual dan fotorealistik arsitektur.
    - Buat **Gambar Ilustrasi Pendukung (Body Image)**: `assets/img/[slug-artikel]-02.webp` (Landscape 16:9 atau 4:3) yang memperjelas detail teknis/interior/fasad/konstruksi yang dibahas pada artikel.
    - Simpan gambar ke direktori `assets/img/` dengan penamaan SEO-friendly berbasis slug artikel.
-2. **Membuat File HTML Artikel Baru (`[slug-artikel].html`)** di root project sesuai anatomi dan template master, dengan menyematkan gambar-gambar yang telah dibuat.
+2. **Membuat File HTML Artikel Baru (`[slug-artikel].html`)** di root project sesuai anatomi dan template master (DILARANG KERAS menggunakan penomoran `1.`, `2.`, `3.` pada tag H / subjudul), dengan menyematkan gambar-gambar yang telah dibuat.
 3. **Menyesuaikan Tanggal Secara Otomatis** dengan tanggal hari saat pembuatan artikel (misal tanggal saat ini `31 Agustus 2026`).
 4. **Mendaftarkan Artikel Baru ke Halaman [blog.html](file:///d:/Magang%20Industri/arsitekmalangweb/arsitekmalang/blog.html)**:
    - Tambahkan kartu artikel baru pada urutan teratas dalam container `<div class="row g-4">` menggunakan thumbnail `[slug-artikel]-01.webp`.
@@ -131,23 +131,29 @@ File artikel baru harus memiliki struktur layout persis seperti standar artikel 
 - Breadcrumb Nav: `Beranda` > `Blog` > `[Judul Singkat Artikel]`.
 
 ### 4. Konten Utama Artikel (`<main>` -> `col-lg-8`)
-1. **Meta Bar**: Tanggal hari ini (`DD MMMM YYYY`), Penulis `Muhammad Musyaffa`, Status Peninjau: `<i class="bi bi-patch-check me-1"></i>Ditinjau oleh Arsitek Berlisensi IAI Malang`.
+1. **Meta Bar**: Tanggal hari ini (`DD MMMM YYYY`), Penulis `Naura Regyna Putri`, Status Peninjau: `<i class="bi bi-patch-check me-1"></i>Ditinjau oleh Arsitek Berlisensi IAI Malang`.
 2. **Main Title Heading (`<h1>`)**: `fw-800 mb-4` dengan gaya tipografi tegas.
 3. **Featured Image Wrap**: Kartu gambar utama dengan sudut melengkung `rounded-4 shadow-sm` dan alt-text kaya kata kunci.
 4. **Summary Box (Ringkasan Inti)**: Box p-4 rounded-3 latar `#f8fafc` dengan border kiri `border-left: 4px solid var(--accent-color);`, memuat icon `<i class="bi bi-bookmark-check-fill text-primary-custom me-2"></i>Ringkasan Inti` dan 4–5 butir poin ringkasan utama.
-5. **Table of Contents (Daftar Isi Artikel)**: Box border putih rapi dengan daftar terurut (`<ol>`) anchor links `#sec-1`, `#sec-2`, `#sec-3`, `#sec-4` (tanpa tautan kesimpulan).
+5. **Table of Contents (Daftar Isi Artikel)**: Box border putih rapi dengan daftar terurut (`<ol>`) anchor links `#sec-1`, `#sec-2`, `#sec-3`, `#sec-4` dengan teks judul bersih tanpa awalan nomor angka (tanpa tautan kesimpulan).
 6. **Lead Paragraph**: Paragraf pembuka berbobot dengan gaya lead `fs-5 fw-500`.
 7. **Isi Artikel (Minimal 3–4 Subjudul H3 + FAQ)**:
-   - `<h3 id="sec-1">`: Pembahasan fondasi teori / masalah lapangan di Malang.
+   - ⚠️ **ATURAN WAJIB: DILARANG MENGGUNAKAN PENOMORAN (1. 2. 3. dst.) PADA TAG H (HEADING/SUBJUDUL)**:
+     Semua tag heading (`<h1>`, `<h2>`, `<h3>`, `<h4>`) **DILARANG KERAS** diawali nomor urut angka seperti `1. `, `2. `, `3. `, dst. Tuliskan langsung judul topik atau kalimat pembahasannya secara profesional.
+     - *Contoh SALAH:* `<h3 id="sec-1">1. Alasan Memilih Arsitek Malang</h3>`
+     - *Contoh BENAR:* `<h3 id="sec-1">Alasan Memilih Arsitek Malang</h3>`
+     - *Contoh SALAH:* `<h3 id="sec-4">4. FAQ (Pertanyaan Sering Diajukan)</h3>`
+     - *Contoh BENAR:* `<h3 id="sec-4">FAQ Seputar Jasa Arsitek Malang</h3>` atau `<h3 id="sec-4">FAQ (Pertanyaan Sering Diajukan)</h3>`
+   - `<h3 id="sec-1">`: Pembahasan fondasi teori / masalah lapangan di Malang (tanpa awalan angka 1.).
    - Gambar teknis / ilustrasi tambahan (`article-image-wrap`).
-   - `<h3 id="sec-2">`: Solusi desain arsitektural & teknik eksekusi.
+   - `<h3 id="sec-2">`: Solusi desain arsitektural & teknik eksekusi (tanpa awalan angka 2.).
    - **Pro Tip Box (Catatan Arsitek Malang)**: Kotak biru muda bergaris tepi aksen memuat tips praktis dari arsitek.
    - **Inline Callout "Baca Juga"**: Box tautan silang ke 2 artikel blog relevan lainnya.
-   - `<h3 id="sec-3">`: Aspek legalitas (PBG/SIMBG), struktur bangunan, atau efisiensi anggaran.
-   - `<h3 id="sec-4">`: **FAQ (Pertanyaan Sering Diajukan)**: 3 pertanyaan dan jawaban teknis paling sering diajukan klien.
+   - `<h3 id="sec-3">`: Aspek legalitas (PBG/SIMBG), struktur bangunan, atau efisiensi anggaran (tanpa awalan angka 3.).
+   - `<h3 id="sec-4">`: **FAQ (Pertanyaan Sering Diajukan)**: 3 pertanyaan dan jawaban teknis paling sering diajukan klien (tanpa awalan angka 4.).
    - ⚠️ **ATURAN WAJIB: TIDAK PERLU KESIMPULAN**: **Dilarang keras / TIDAK PERLU menambahkan subjudul "Kesimpulan" atau "Kesimpulan Praktis"** di bagian akhir artikel maupun di dalam Daftar Isi (TOC). Artikel langsung ditutup setelah bagian FAQ, lalu langsung tersambung ke CTA Box.
 8. **CTA Box Interaktif**: Gradien halus aksen dengan headline konsultasi dan tombol WhatsApp langsung memanggil fungsi `openWA('Konsultasi [Topik Artikel]')`.
-9. **Author Bio Card**: Kartu profil Muhammad Musyaffa (Tim Riset Arsitektur Maroon Arsitek Malang / Spesialis Legalitas PBG & Konstruksi).
+9. **Author Bio Card**: Kartu profil Naura Regyna Putri (Tim Riset Arsitektur Maroon Arsitek Malang / Spesialis Legalitas PBG & Konstruksi).
 10. **Rekomendasi Paket Layanan Sesuai Bacaan**: 2 kartu layanan terkait (misal: *Paket Jasa Arsitek 3D Komplit* & *Paket Kontraktor Bangun Rumah*) lengkap dengan tombol detail paket dan tombol konsultasi WA.
 
 ### 5. Sidebar Kolom Kanan (`col-lg-4`)
@@ -215,7 +221,7 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
         "dateModified": "{{TANGGAL_YYYY_MM_DD}}",
         "author": {
           "@type": "Person",
-          "name": "Muhammad Musyaffa"
+          "name": "Naura Regyna Putri"
         },
         "publisher": {
           "@type": "Organization",
@@ -334,7 +340,7 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
             
             <div class="d-flex align-items-center gap-3 mb-3 text-muted extra-small flex-wrap">
               <span><i class="bi bi-calendar3 me-1"></i>{{TANGGAL_LENGKAP_HARI_INI}}</span>
-              <span><i class="bi bi-person me-1"></i>Muhammad Musyaffa</span>
+              <span><i class="bi bi-person me-1"></i>Naura Regyna Putri</span>
               <span><i class="bi bi-patch-check me-1"></i>Ditinjau oleh Arsitek Berlisensi IAI Malang</span>
             </div>
 
@@ -364,10 +370,10 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
                   <h5 class="fw-800 text-dark mb-2" style="font-size:1.1rem;"><i class="bi bi-list-nested text-primary-custom me-2"></i>Daftar Isi Artikel</h5>
                 </div>
                 <ol class="mb-0 text-muted extra-small d-flex flex-column gap-2" style="line-height:1.7; padding-left:1.2rem;">
-                  <li><a href="#sec-1" class="text-primary-custom text-decoration-none fw-600">1. {{TOC_TITLE_1}}</a></li>
-                  <li><a href="#sec-2" class="text-primary-custom text-decoration-none fw-600">2. {{TOC_TITLE_2}}</a></li>
-                  <li><a href="#sec-3" class="text-primary-custom text-decoration-none fw-600">3. {{TOC_TITLE_3}}</a></li>
-                  <li><a href="#sec-4" class="text-primary-custom text-decoration-none fw-600">4. FAQ (Pertanyaan Sering Diajukan)</a></li>
+                  <li><a href="#sec-1" class="text-primary-custom text-decoration-none fw-600">{{TOC_TITLE_1}}</a></li>
+                  <li><a href="#sec-2" class="text-primary-custom text-decoration-none fw-600">{{TOC_TITLE_2}}</a></li>
+                  <li><a href="#sec-3" class="text-primary-custom text-decoration-none fw-600">{{TOC_TITLE_3}}</a></li>
+                  <li><a href="#sec-4" class="text-primary-custom text-decoration-none fw-600">FAQ (Pertanyaan Sering Diajukan)</a></li>
                 </ol>
               </div>
 
@@ -377,7 +383,7 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
               </p>
 
               <!-- SUBJUDUL 1 -->
-              <h3 id="sec-1" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">1. {{JUDUL_H3_1}}</h3>
+              <h3 id="sec-1" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">{{JUDUL_H3_1}}</h3>
               <p>{{KONTEN_PARAGRAF_1A}}</p>
               <p>{{KONTEN_PARAGRAF_1B}}</p>
 
@@ -387,7 +393,7 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
               </div>
 
               <!-- SUBJUDUL 2 -->
-              <h3 id="sec-2" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">2. {{JUDUL_H3_2}}</h3>
+              <h3 id="sec-2" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">{{JUDUL_H3_2}}</h3>
               <p>{{KONTEN_PARAGRAF_2A}}</p>
               <ul>
                 <li>{{POIN_PENJELASAN_1}}</li>
@@ -411,12 +417,12 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
               </div>
 
               <!-- SUBJUDUL 3 -->
-              <h3 id="sec-3" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">3. {{JUDUL_H3_3}}</h3>
+              <h3 id="sec-3" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">{{JUDUL_H3_3}}</h3>
               <p>{{KONTEN_PARAGRAF_3A}}</p>
               <p>{{KONTEN_PARAGRAF_3B}}</p>
 
               <!-- SUBJUDUL 4 (FAQ) -->
-              <h3 id="sec-4" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">4. FAQ (Pertanyaan Sering Diajukan)</h3>
+              <h3 id="sec-4" class="fw-800 mt-4 mb-3" style="font-size:1.35rem; color:#0f172a;">FAQ (Pertanyaan Sering Diajukan)</h3>
               <p><strong>{{FAQ_TANYA_1}}</strong><br>
               {{FAQ_JAWAB_1}}</p>
               <p><strong>{{FAQ_TANYA_2}}</strong><br>
@@ -437,9 +443,9 @@ Gunakan template HTML di bawah ini sebagai pondasi pembuatan file artikel baru:
 
               <!-- AUTHOR BIO -->
               <div class="author-bio-card d-flex align-items-center gap-3 p-3 rounded-3 mt-4 border" style="background:#f8fafc;">
-                <img src="assets/img/studio-arsitek-malang.webp" alt="Muhammad Musyaffa" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
+                <img src="assets/img/studio-arsitek-malang.webp" alt="Naura Regyna Putri" style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
                 <div>
-                  <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Muhammad Musyaffa</h6>
+                  <h6 class="fw-800 mb-1" style="font-size:0.95rem;">Naura Regyna Putri</h6>
                   <p class="text-muted extra-small mb-0">Penulis &amp; Tim Riset Arsitektur Maroon Arsitek Malang, spesialis legalitas PBG/SIMBG, perencanaan tata ruang, dan estimasi biaya konstruksi.</p>
                 </div>
               </div>
