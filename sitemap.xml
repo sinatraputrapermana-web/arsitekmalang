@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -446,6 +446,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/portofolio-arsitek-malang.html</loc>
     <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Desain Rumah Minimalis Malang: Akali Lahan Sempit -->
+  <url>
+    <loc>https://arsitekmalang.web.id/desain-rumah-minimalis-malang.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Denah Rumah Minimalis 6x12: Contoh Karya Kami -->
+  <url>
+    <loc>https://arsitekmalang.web.id/denah-rumah-minimalis-6x12.html</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
