@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -462,6 +462,30 @@
   <url>
     <loc>https://arsitekmalang.web.id/denah-rumah-minimalis-6x12.html</loc>
     <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Material Eksterior Rumah Tahan Cuaca Malang -->
+  <url>
+    <loc>https://arsitekmalang.web.id/material-eksterior-rumah-tahan-cuaca-malang.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: 10 Inspirasi Fasad Rumah Minimalis Malang -->
+  <url>
+    <loc>https://arsitekmalang.web.id/fasad-rumah-minimalis-modern-malang.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Berapa Biaya Retaining Wall untuk Lahan Kontur di Batu? -->
+  <url>
+    <loc>https://arsitekmalang.web.id/biaya-retaining-wall-lahan-kontur-batu-malang.html</loc>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
