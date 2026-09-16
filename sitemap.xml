@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -494,6 +494,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/biaya-retaining-wall-lahan-kontur-batu-malang.html</loc>
     <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Jasa Arsitek Rumah 2 Lantai Malang Terpercaya -->
+  <url>
+    <loc>https://arsitekmalang.web.id/arsitek-rumah-2-lantai-malang.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Struktur Rumah 2 Lantai Kokoh di Lahan Lereng Malang -->
+  <url>
+    <loc>https://arsitekmalang.web.id/struktur-rumah-2-lantai-lahan-lereng-malang.html</loc>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
