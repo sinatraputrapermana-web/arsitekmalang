@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -510,6 +510,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/struktur-rumah-2-lantai-lahan-lereng-malang.html</loc>
     <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Desain Void Rumah untuk Cahaya Alami di Malang -->
+  <url>
+    <loc>https://arsitekmalang.web.id/desain-void-rumah-pencahayaan-alami-malang.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Estimasi Biaya Rumah 2 Lantai Malang 2026 -->
+  <url>
+    <loc>https://arsitekmalang.web.id/biaya-rumah-2-lantai-malang-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
