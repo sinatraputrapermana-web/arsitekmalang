@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -526,6 +526,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/biaya-rumah-2-lantai-malang-2026.html</loc>
     <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Mengenal Filosofi Arsitektur Malang untuk Iklim Tropis -->
+  <url>
+    <loc>https://arsitekmalang.web.id/mengenal-filosofi-arsitektur-malang-iklim-tropis.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Apa yang Dipelajari Arsitek Villa Batu dari Portofolio Araya -->
+  <url>
+    <loc>https://arsitekmalang.web.id/arsitek-villa-batu-belajar-portofolio-araya.html</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
