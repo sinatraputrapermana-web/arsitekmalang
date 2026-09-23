@@ -80,6 +80,7 @@ function initMobileNav() {
     navmenu.classList.remove('active');
     toggle.classList.add('bi-list');
     toggle.classList.remove('bi-x');
+    toggle.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('mobile-nav-active');
   }
 
@@ -87,6 +88,7 @@ function initMobileNav() {
     navmenu.classList.add('active');
     toggle.classList.remove('bi-list');
     toggle.classList.add('bi-x');
+    toggle.setAttribute('aria-expanded', 'true');
     document.body.classList.add('mobile-nav-active');
   }
 
@@ -227,11 +229,16 @@ function initFAQ() {
       const isActive = item.classList.contains('active');
 
       // Close all
-      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('active');
+        const qBtn = el.querySelector('.faq-question');
+        if (qBtn) qBtn.setAttribute('aria-expanded', 'false');
+      });
 
       // Open this if it was closed
       if (!isActive) {
         item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
       }
     });
   });

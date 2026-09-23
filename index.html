@@ -137,7 +137,8 @@
   <link rel="manifest" href="site.webmanifest">
 
   <!-- ===== HIGH PRIORITY PRELOAD (LCP) ===== -->
-  <link rel="preload" as="image" href="assets/img/proses-konstruksi-bangunan-hero.webp" media="(max-width: 991.98px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/proses-konstruksi-bangunan-hero-sm.webp" media="(max-width: 600px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/proses-konstruksi-bangunan-hero.webp" media="(min-width: 600.02px) and (max-width: 991.98px)" fetchpriority="high">
   <link rel="preload" as="image" href="assets/img/desain-arsitek-malang.webp" media="(min-width: 992px)" fetchpriority="high">
 
   <!-- ===== RESOURCE PRECONNECT & DNS-PREFETCH ===== -->
@@ -146,18 +147,203 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
 
-  <!-- ===== PRELOAD CRITICAL FONT (Icons) ===== -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2?dd670308d0e7740fa1888474e4c278c6" as="font" type="font/woff2" crossorigin>
+  <!-- ===== CRITICAL ABOVE-THE-FOLD CSS (Instant Paint - Zero FOUC) ===== -->
+  <style id="critical-css">
+    :root {
+      --accent-color: #007491;
+      --accent-dark: #005d75;
+      --accent-light: #e6f7fa;
+      --nav-color: #ffffff;
+      --nav-hover-color: #007491;
+      --heading-color: #0f172a;
+      --default-color: #334155;
+      --surface-color: #ffffff;
+      --background-color: #f8fafc;
+      --contrast-color: #ffffff;
+      --dark-bg: #0d1b2a;
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: clip !important; max-width: 100vw; width: 100%; }
+    body {
+      font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--default-color);
+      line-height: 1.7;
+      overflow-x: clip !important;
+      max-width: 100vw;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    #preloader { display: none !important; }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--heading-color);
+      font-weight: 700;
+    }
+    a { text-decoration: none; color: var(--accent-color); transition: var(--transition); }
+    img { max-width: 100%; height: auto; }
+    .container-fluid { width: 100%; max-width: 100%; padding-left: 24px; padding-right: 24px; }
+    .container { width: 100%; padding-left: 20px; padding-right: 20px; margin-left: auto; margin-right: auto; }
+    @media (min-width: 576px) { .container { max-width: 540px; padding-left: 24px; padding-right: 24px; } }
+    @media (min-width: 768px) { .container { max-width: 720px; padding-left: 24px; padding-right: 24px; } }
+    @media (min-width: 992px) { .container { max-width: 960px; padding-left: 32px; padding-right: 32px; } }
+    @media (min-width: 1200px) { .container { max-width: 1160px; padding-left: 40px; padding-right: 40px; } }
+    @media (min-width: 1400px) { .container { max-width: 1320px; padding-left: 48px; padding-right: 48px; } }
+    .row { display: flex; flex-wrap: wrap; margin-left: -12px; margin-right: -12px; }
+    .align-items-center { align-items: center; }
+    .justify-content-between { justify-content: space-between; }
+    .d-flex { display: flex; }
+    .d-block { display: block; }
+    .d-none { display: none; }
+    .position-relative { position: relative; }
+    .position-absolute { position: absolute; }
+    .overflow-hidden { overflow: hidden; }
+    .w-100 { width: 100%; }
+    .h-100 { height: 100%; }
+    .top-0 { top: 0; }
+    .start-0 { left: 0; }
+    .m-3 { margin: 1rem; }
+    .my-4 { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+    .mb-0 { margin-bottom: 0; }
+    .mb-1 { margin-bottom: 0.25rem; }
+    .mb-3 { margin-bottom: 1rem; }
+    .p-3 { padding: 1rem; }
+    .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+    .px-3 { padding-left: 1rem; padding-right: 1rem; }
+    .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+    .pb-1 { padding-bottom: 0.25rem; }
+    .me-1 { margin-right: 0.25rem; }
+    .me-2 { margin-right: 0.5rem; }
+    .ms-1 { margin-left: 0.25rem; }
+    .text-end { text-align: right; }
+    .text-white { color: #fff !important; }
+    .text-white-50 { color: rgba(255, 255, 255, 0.75) !important; }
+    .text-warning { color: #f59e0b !important; }
+    .text-info { color: #00b4d8 !important; }
+    .text-primary-custom { color: var(--accent-color) !important; }
+    .fw-700 { font-weight: 700; }
+    .fw-800 { font-weight: 800; }
+    .rounded-pill { border-radius: 50rem; }
+    .shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .shadow-lg { box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
+    .border-0 { border: 0 !important; }
+    .extra-small { font-size: 0.8rem; }
+    .h5 { font-size: 1.25rem; }
+    .col-lg-7, .col-lg-5 { width: 100%; padding-left: 12px; padding-right: 12px; }
+    @media (max-width: 991.98px) {
+      .d-lg-none { display: block !important; }
+    }
+    @media (min-width: 992px) {
+      .d-lg-none { display: none !important; }
+      .d-lg-block { display: block !important; }
+      .col-lg-7 { width: 58.333333%; }
+      .col-lg-5 { width: 41.666667%; }
+    }
+    #header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 16px 0; transition: var(--transition);
+      background: transparent;
+    }
+    #header.scrolled {
+      background: rgba(13, 27, 42, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+      padding: 10px 0;
+    }
+    .header-container { display: flex; align-items: center; justify-content: space-between; }
+    .logo {
+      font-size: 1.35rem; font-weight: 800; color: #fff;
+      display: flex; align-items: center; letter-spacing: -0.5px;
+    }
+    #navmenu ul { margin: 0; padding: 0; display: flex; list-style: none; align-items: center; gap: 4px; }
+    #navmenu a {
+      color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500;
+      padding: 8px 14px; border-radius: 6px; display: flex; align-items: center;
+    }
+    #navmenu a:hover, #navmenu a.active { color: #fff; background: rgba(0, 116, 145, 0.35); }
+    @media (max-width: 991.98px) {
+      #navmenu {
+        position: fixed; top: 70px; right: -100%; width: 280px; height: calc(100vh - 70px);
+        background: #0d1b2a; padding: 24px; transition: right 0.3s ease;
+        box-shadow: -5px 0 25px rgba(0,0,0,0.4);
+      }
+      #navmenu.active { right: 0; }
+      #navmenu ul { flex-direction: column; align-items: flex-start; gap: 8px; width: 100%; }
+      #navmenu a { width: 100%; padding: 10px 16px; }
+    }
+    .mobile-nav-toggle {
+      display: none; background: transparent; border: 0; color: #fff;
+      font-size: 1.8rem; cursor: pointer; padding: 4px;
+    }
+    @media (max-width: 991.98px) { .mobile-nav-toggle { display: block; } }
+    .travel-hero {
+      position: relative; min-height: 100vh; display: flex;
+      align-items: center; overflow: hidden; background-color: #0d1b2a;
+    }
+    .hero-background {
+      position: absolute; inset: 0; background-size: cover !important;
+      background-position: center !important; background-repeat: no-repeat !important;
+      z-index: 0; background-color: #0d1b2a;
+    }
+    @media (max-width: 991.98px) {
+      .hero-background { background: linear-gradient(135deg, #0d1b2a 0%, #004d61 100%) !important; }
+    }
+    @media (min-width: 992px) {
+      .hero-background { background-image: url('assets/img/desain-arsitek-malang.webp') !important; }
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(13, 27, 42, 0.85) 0%, rgba(0, 140, 173, 0.45) 100%);
+      z-index: 1;
+    }
+    .hero-offset { padding-top: 80px; }
+    .travel-hero .container { position: relative; z-index: 2; padding-top: 40px; padding-bottom: 60px; }
+    .hero-text .hero-title {
+      font-size: clamp(1.65rem, 3.5vw, 2.5rem); font-weight: 800;
+      color: #fff; line-height: 1.25; letter-spacing: -0.5px; margin-bottom: 1rem;
+    }
+    .hero-subtitle {
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem); color: rgba(255,255,255,0.9);
+      line-height: 1.7; margin-bottom: 1.75rem;
+    }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; font-weight: 600;
+      font-size: 0.95rem; padding: 12px 24px; border-radius: 10px; cursor: pointer;
+      transition: var(--transition); border: 2px solid transparent;
+    }
+    .btn-primary { background: var(--accent-color); color: #fff; }
+    .btn-primary:hover { background: var(--accent-dark); color: #fff; transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: #fff; border-color: rgba(255,255,255,0.4); }
+    .btn-outline:hover { background: rgba(255,255,255,0.15); color: #fff; border-color: #fff; }
+    @font-face {
+      font-family: "bootstrap-icons";
+      font-display: swap;
+      src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2") format("woff2");
+    }
+  </style>
 
-  <!-- ===== GOOGLE FONTS ===== -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- ===== GOOGLE FONTS (Non-Blocking) ===== -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap"></noscript>
 
-  <!-- ===== CORE STYLESHEETS (Instant Complete Paint - Zero FOUC) ===== -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- ===== ASYNC CORE STYLESHEETS (Zero Render-Blocking) ===== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </noscript>
 </head>
 <body class="index-page">
 
@@ -191,7 +377,7 @@
       </nav>
 
       <div class="header-actions">
-        <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation" id="mobileNavToggle"></button>
+        <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation" id="mobileNavToggle" aria-expanded="false" aria-controls="navmenu"></button>
       </div>
     </div>
   </header><!-- END HEADER -->
@@ -200,7 +386,7 @@
 
     <!-- ======= A. HERO SECTION ======= -->
     <section id="travel-hero" class="travel-hero section hero-offset">
-      <div class="hero-background" style="background-image: url('assets/img/desain-arsitek-malang.webp');">
+      <div class="hero-background">
         <div class="hero-overlay"></div>
       </div>
 
@@ -215,8 +401,10 @@
               <div class="d-lg-none my-4">
                 <div class="card-custom p-3 border-0 shadow-lg text-white" style="background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.15) !important;">
                   <div class="position-relative overflow-hidden mb-3" style="border-radius: 14px; height: 220px;">
-                    <img src="assets/img/proses-konstruksi-bangunan-hero.webp"
-                         alt="Karya Arsitek Malang" width="700" height="450" class="w-100 h-100" style="object-fit: cover;" fetchpriority="high">
+                    <img src="assets/img/proses-konstruksi-bangunan-hero-sm.webp"
+                         srcset="assets/img/proses-konstruksi-bangunan-hero-sm.webp 420w, assets/img/proses-konstruksi-bangunan-hero.webp 700w"
+                         sizes="(max-width: 600px) 420px, 700px"
+                         alt="Karya Arsitek Malang" width="420" height="270" class="w-100 h-100" style="object-fit: cover;" fetchpriority="high">
                     <span class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill shadow-sm fw-700" style="background: rgba(0, 116, 145, 0.95); color: #fff; font-size: 0.75rem;">
                       <i class="bi bi-star-fill text-warning me-1"></i> Karya Unggulan
                     </span>
@@ -235,13 +423,13 @@
               </div>
 
               <p class="hero-subtitle">
-                Tim <strong>arsitek dan kontraktor profesional</strong> di Malang siap membantu Anda dari tahap perencanaan desain hingga pembangunan selesai. Lebih dari 150 proyek berhasil kami selesaikan dengan standar kualitas premium.
+                Merancang dan membangun hunian presisi di Malang Raya. Dari sketsa tata ruang, perhitungan struktur dan RAB, hingga bangunan berdiri siap huni—didukung pengalaman di lebih dari 150 proyek.
               </p>
               <div class="hero-buttons">
                 <a href="services.html" class="btn btn-primary" title="Lihat Semua Layanan Kami">
                   <i class="bi bi-grid"></i> Lihat Layanan
                 </a>
-                <a href="javascript:void(0)" onclick="openWA('Konsultasi Proyek')" class="btn btn-outline" title="Konsultasi via WhatsApp">
+                <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Malang%2C%20saya%20ingin%20konsultasi%20mengenai%20layanan%20Konsultasi%20Proyek" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="Konsultasi via WhatsApp">
                   <i class="bi bi-whatsapp"></i> Konsultasi via WhatsApp
                 </a>
               </div>
@@ -289,9 +477,9 @@
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="content">
-              <h2 class="h3">Arsitek &amp; Kontraktor Malang Terpercaya dengan Pengalaman Nyata</h2>
-              <p>Kami adalah <strong>tim arsitek dan kontraktor profesional terpercaya</strong> yang telah melayani berbagai klien di Malang dan sekitarnya. Fokus pada kualitas material, desain yang sesuai kebutuhan, dan ketepatan waktu penyelesaian proyek.</p>
-              <p>Dengan pengalaman lebih dari 10 tahun dan tim desainer berpengalaman, kami siap mewujudkan rumah impian Anda, mulai dari desain konseptual hingga konstruksi selesai siap huni.</p>
+              <h2 class="h3">Perencanaan Matang, Struktur Teruji, dan Eksekusi Lapangan yang Rapi</h2>
+              <p>Membangun rumah di kawasan berbukit atau pemukiman padat Malang membutuhkan perhitungan matang—bukan sekadar gambar tampak yang bagus. Kami memadukan estetika arsitektur tropis modern dengan pengawasan konstruksi yang disiplin.</p>
+              <p>Lebih dari satu dekade kami mendampingi pemilik lahan menyusun konsep denah fungsional, memilih material yang tahan iklim lokal, dan mengawal pembangunan agar selesai tepat waktu sesuai anggaran.</p>
 
               <div class="stats-row">
                 <div class="stat-item">
@@ -324,7 +512,7 @@
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
             <h2 class="h1">Mengapa Memilih Arsitek Malang?</h2>
-            <p class="text-secondary">Kepercayaan ratusan klien dibangun dari kualitas desain, ketepatan waktu, dan transparansi biaya di setiap proyek.</p>
+            <p class="text-secondary">Kepercayaan ratusan klien dibangun dari kecermatan desain, disiplin jadwal kerja, dan keterbukaan biaya di setiap proyek.</p>
           </div>
         </div>
 
@@ -334,8 +522,8 @@
               <div class="feature-icon mx-auto">
                 <i class="bi bi-compass-fill"></i>
               </div>
-              <h3>Desain Eksklusif</h3>
-              <p>Solusi tata ruang yang disesuaikan karakter dan kebutuhan spesifik Anda, dari konsep hingga 3D render.</p>
+              <h3>Denah &amp; Fasad Personal</h3>
+              <p>Tata ruang disesuaikan gaya hidup keluarga, arah pencahayaan matahari, dan sirkulasi angin alami di lahan Anda.</p>
             </div>
           </div>
 
@@ -344,8 +532,8 @@
               <div class="feature-icon mx-auto">
                 <i class="bi bi-hammer"></i>
               </div>
-              <h3>Konstruksi Berkualitas</h3>
-              <p>Material pilihan dan teknik pembangunan presisi untuk struktur yang kokoh dan tahan lama.</p>
+              <h3>Struktur Kokoh &amp; Teruji</h3>
+              <p>Perhitungan pembesian, mutu beton, dan sambungan struktur yang presisi demi ketahanan bangunan jangka panjang.</p>
             </div>
           </div>
 
@@ -354,8 +542,8 @@
               <div class="feature-icon mx-auto">
                 <i class="bi bi-receipt-cutoff"></i>
               </div>
-              <h3>Transparansi Biaya</h3>
-              <p>RAB rinci tanpa biaya tersembunyi. Kami pastikan Anda tahu persis anggaran yang digunakan.</p>
+              <h3>RAB Rinci &amp; Terbuka</h3>
+              <p>Uraian volume, harga satuan material, dan upah kerja dijelaskan detail sejak awal tanpa pos biaya siluman.</p>
             </div>
           </div>
 
@@ -364,8 +552,8 @@
               <div class="feature-icon mx-auto">
                 <i class="bi bi-clock-history"></i>
               </div>
-              <h3>Tepat Waktu</h3>
-              <p>Pengawasan ketat dan manajemen proyek terstruktur untuk memastikan serah terima proyek sesuai kesepakatan.</p>
+              <h3>Progres Berkala &amp; Terjadwal</h3>
+              <p>Laporan berkala setiap tahap pembangunan memastikan pekerjaan berjalan sesuai kurva rencana dan tenggat waktu.</p>
             </div>
           </div>
         </div>
@@ -394,9 +582,9 @@
                   <div>
                     <span class="destination-tag"><i class="bi bi-star-fill text-warning me-1"></i> Paling Dicari</span>
                   </div>
-                  <h3>Kontraktor Rumah Premium</h3>
-                  <p class="location"><i class="bi bi-geo-alt-fill"></i> Solusi Bangun Rumah Lengkap</p>
-                  <p class="description">Pembangunan hunian dari pondasi hingga finishing dengan pengawasan ketat, material berkualitas, dan jaminan struktur yang kokoh. Tersedia paket basic hingga premium.</p>
+                  <h3>Kontraktor Rumah Tinggal</h3>
+                  <p class="location"><i class="bi bi-geo-alt-fill"></i> Solusi Bangun Rumah Terpadu</p>
+                  <p class="description">Pembangunan rumah tinggal dari galian pondasi hingga serah terima kunci. Setiap tahap diawasi langsung oleh mandor dan arsitek penanggung jawab dengan laporan tertulis berkala.</p>
                   <div class="destination-meta">
                     <div class="tours-count">
                       <i class="bi bi-collection"></i>
@@ -430,7 +618,7 @@
                   <div class="destination-details">
                     <h4>Jasa Arsitek</h4>
                     <p class="location"><i class="bi bi-geo-alt"></i> Perencanaan &amp; Desain Bangunan</p>
-                    <p class="brief">Pengembangan konsep, perancangan denah struktural, dan visualisasi 3D rendering fotorealistik untuk gambaran hasil akhir yang akurat.</p>
+                    <p class="brief">Penyusunan denah arsitektur, gambar kerja teknis, visualisasi 3D fotorealistik, dan kelengkapan dokumen pengurusan PBG.</p>
                     <div class="stats-row">
                       <span class="tour-count"><i class="bi bi-calendar-check"></i> Konsultasi Gratis</span>
                       <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
@@ -449,7 +637,7 @@
                   <div class="destination-details">
                     <h4>Desain Interior</h4>
                     <p class="location"><i class="bi bi-geo-alt"></i> Penataan Ruang Estetis &amp; Fungsional</p>
-                    <p class="brief">Desain bespoke furniture, pemilihan material interior grade A, dan finishing estetika yang mendetail sesuai kepribadian unik Anda.</p>
+                    <p class="brief">Perencanaan tata letak furnitur custom, tata pencahayaan (lighting design), dan pemilihan material finishing yang awet serta mudah dirawat.</p>
                     <div class="stats-row">
                       <span class="tour-count"><i class="bi bi-calendar-check"></i> 40+ Proyek</span>
                       <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
@@ -469,7 +657,7 @@
                   <div class="destination-details">
                     <h4>Renovasi &amp; Kontraktor Gedung</h4>
                     <p class="location"><i class="bi bi-geo-alt"></i> Semua Skala Proyek</p>
-                    <p class="brief">Mulai dari renovasi rumah sederhana hingga konstruksi gedung komersial skala besar. Manajemen proyek terpadu dengan laporan berkala.</p>
+                    <p class="brief">Peremajaan fasad, penambahan lantai, perkuatan struktur eksisting, serta pembangunan fasilitas usaha dan gedung komersial dengan pengawasan terpadu.</p>
                     <div class="stats-row">
                       <span class="tour-count"><i class="bi bi-calendar-check"></i> 5 Layanan</span>
                       <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
@@ -669,67 +857,67 @@
         <div class="faq-accordion">
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-1">
               <span class="faq-number">01</span>
               <span class="faq-text">Bagaimana cara memulai konsultasi proyek?</span>
               <i class="bi bi-plus-lg faq-icon"></i>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-ans-1">
               <p>Hubungi tim kami via WhatsApp atau kunjungi kantor kami. Konsultasi awal gratis mencakup diskusi kebutuhan, gambaran desain, dan estimasi biaya proyek Anda.</p>
             </div>
           </div>
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-2">
               <span class="faq-number">02</span>
               <span class="faq-text">Berapa biaya jasa arsitek di Malang?</span>
               <i class="bi bi-plus-lg faq-icon"></i>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-ans-2">
               <p>Biaya desain arsitektur bervariasi tergantung kompleksitas dan luas bangunan. Kami menyediakan paket transparan mulai dari desain basic hingga full service. Hubungi kami untuk estimasi detail sesuai kebutuhan proyek Anda.</p>
             </div>
           </div>
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-3">
               <span class="faq-number">03</span>
               <span class="faq-text">Berapa lama proses desain dan pembangunan?</span>
               <i class="bi bi-plus-lg faq-icon"></i>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-ans-3">
               <p>Proses desain arsitektur memakan waktu 2-4 minggu tergantung revisi. Pembangunan rumah tinggal estimasi 4-8 bulan, sedangkan gedung komersial lebih lama. Kami akan memberikan timeline detail saat konsultasi.</p>
             </div>
           </div>
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-4">
               <span class="faq-number">04</span>
               <span class="faq-text">Apakah ada garansi kualitas konstruksi?</span>
               <i class="bi bi-plus-lg faq-icon"></i>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-ans-4">
               <p>Ya, kami memberikan garansi struktural pada setiap proyek konstruksi. Jika ditemukan cacat atau tidak sesuai spesifikasi, kami akan menanganinya tanpa biaya tambahan.</p>
             </div>
           </div>
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-5">
               <span class="faq-number">05</span>
               <span class="faq-text">Apakah Arsitek Malang melayani luar kota?</span>
               <i class="bi bi-plus-lg faq-icon"></i>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-ans-5">
               <p>Kami melayani proyek di Malang, Batu, Kepanjen, Lawang, dan area Malang Raya. Untuk proyek di luar area tersebut, hubungi kami terlebih dahulu untuk konfirmasi dan biaya tambahan mobilisasi.</p>
             </div>
           </div>
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-6">
               <span class="faq-number">06</span>
               <span class="faq-text">Apa saja yang termasuk dalam layanan kontraktor?</span>
               <i class="bi bi-plus-lg faq-icon"></i>
             </button>
-            <div class="faq-answer">
+            <div class="faq-answer" id="faq-ans-6">
               <p>Layanan kontraktor kami mencakup: pengadaan material, tenaga kerja, pengawasan harian, laporan progres berkala, hingga serah terima kunci. Semua tertuang dalam kontrak kerja yang transparan.</p>
             </div>
           </div>
@@ -747,8 +935,8 @@
             <div class="badge-wrapper">
               <span class="promo-badge">Konsultasi Gratis</span>
             </div>
-            <h2>Siap Wujudkan Rumah Impian Anda?</h2>
-            <p>Diskusikan kebutuhan proyek arsitektur dan konstruksi Anda bersama tim profesional kami. Dapatkan estimasi biaya dan konsep awal secara gratis hari ini.</p>
+            <h2>Konsultasikan Rencana Bangunan Anda</h2>
+            <p>Ceritakan luasan lahan, preferensi desain, dan perkiraan anggaran Anda. Kami bantu susun konsep awal serta estimasi biaya konstruksi secara terbuka.</p>
 
             <div class="action-section">
               <div class="main-actions">
@@ -756,7 +944,7 @@
                   <i class="bi bi-grid"></i>
                   Lihat Layanan
                 </a>
-                <a href="javascript:void(0)" onclick="openWA('Mulai Proyek Baru')" class="btn btn-deals" title="Chat via WhatsApp">
+                <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Malang%2C%20saya%20ingin%20konsultasi%20mengenai%20Mulai%20Proyek%20Baru" target="_blank" rel="noopener noreferrer" class="btn btn-deals" title="Chat via WhatsApp">
                   <i class="bi bi-whatsapp"></i>
                   Chat WhatsApp
                 </a>
@@ -808,7 +996,7 @@
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 footer-links">
-          <h4>Layanan</h4>
+          <h3 class="h5 text-white mb-3">Layanan</h3>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="services.html">Jasa Arsitek</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="services.html#kontraktor-rumah">Kontraktor Rumah</a></li>
@@ -818,23 +1006,23 @@
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 footer-links">
-          <h4>Informasi</h4>
+          <h3 class="h5 text-white mb-3">Informasi</h3>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="about.html">Tentang Kami</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="blog.html">Blog</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="gallery.html">Galeri Proyek</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#faq">FAQ</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#faq-home">FAQ</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Ikuti Kami</h4>
+          <h3 class="h5 text-white mb-3">Ikuti Kami</h3>
           <p>Update proyek terbaru dan inspirasi desain arsitektur di media sosial kami.</p>
           <div class="social-links d-flex">
-            <a href="javascript:void(0)" onclick="openWA()" aria-label="WhatsApp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-            <a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/6288989643555" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/arsitekmalang" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/arsitekmalang" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/arsitekmalang" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -846,7 +1034,7 @@
   </footer><!-- END FOOTER -->
 
   <!-- WhatsApp Floating -->
-  <a href="javascript:void(0)" onclick="openWA()" class="wa-float" aria-label="Konsultasi via WhatsApp" title="Chat via WhatsApp">
+  <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Malang%2C%20saya%20ingin%20konsultasi%20mengenai%20jasa%20arsitek%20dan%20konstruksi%20bangunan" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Konsultasi via WhatsApp" title="Chat via WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
 
