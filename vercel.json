@@ -59,6 +59,11 @@
       "permanent": true
     },
     {
+      "source": "/arsitek-lahan-kontur-malang-menyusun-rab-tanah-miring",
+      "destination": "/blog/arsitek-lahan-kontur-malang-menyusun-rab-tanah-miring",
+      "permanent": true
+    },
+    {
       "source": "/arsitek-malang-terkenal",
       "destination": "/blog/arsitek-malang-terkenal",
       "permanent": true
@@ -296,6 +301,11 @@
     {
       "source": "/panduan-memilih-arsitek-malang",
       "destination": "/blog/panduan-memilih-arsitek-malang",
+      "permanent": true
+    },
+    {
+      "source": "/panduan-memilih-material-bangunan-malang-rumah-mewah",
+      "destination": "/blog/panduan-memilih-material-bangunan-malang-rumah-mewah",
       "permanent": true
     },
     {

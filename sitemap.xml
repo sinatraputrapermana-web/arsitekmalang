@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -601,6 +601,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/blog/retaining-wall-rumah-lahan-miring-batu.html</loc>
     <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Arsitek Lahan Kontur Malang Menyusun RAB Tanah Miring -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/arsitek-lahan-kontur-malang-menyusun-rab-tanah-miring.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Panduan Memilih Material Bangunan Malang untuk Rumah Mewah -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/panduan-memilih-material-bangunan-malang-rumah-mewah.html</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
