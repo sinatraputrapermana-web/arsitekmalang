@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -617,6 +617,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/blog/panduan-memilih-material-bangunan-malang-rumah-mewah.html</loc>
     <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Desain Split Level Solusi Kontur Malang Raya -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/desain-split-level-lahan-berkontur-malang.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Sanksi Bangunan Malang yang Perlu Diwaspadai Pemilik Rumah -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/sanksi-bangunan-malang-diwaspadai-pemilik-rumah.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
