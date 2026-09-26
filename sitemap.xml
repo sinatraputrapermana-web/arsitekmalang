@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -633,6 +633,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/blog/sanksi-bangunan-malang-diwaspadai-pemilik-rumah.html</loc>
     <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Peran Arsitek Struktur Malang Merancang Retaining Wall Batu -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/peran-arsitek-struktur-malang-retaining-wall-batu.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Tren Desain Villa Kontur Malang dari Proyek Sengkaling -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/tren-desain-villa-kontur-malang-proyek-sengkaling.html</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

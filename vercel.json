@@ -324,6 +324,11 @@
       "permanent": true
     },
     {
+      "source": "/peran-arsitek-struktur-malang-retaining-wall-batu",
+      "destination": "/blog/peran-arsitek-struktur-malang-retaining-wall-batu",
+      "permanent": true
+    },
+    {
       "source": "/peran-arsitek-villa-malang-hunian-kontur-sengkaling",
       "destination": "/blog/peran-arsitek-villa-malang-hunian-kontur-sengkaling",
       "permanent": true
@@ -421,6 +426,11 @@
     {
       "source": "/tren-desain-rumah-2026",
       "destination": "/blog/tren-desain-rumah-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tren-desain-villa-kontur-malang-proyek-sengkaling",
+      "destination": "/blog/tren-desain-villa-kontur-malang-proyek-sengkaling",
       "permanent": true
     }
   ]
