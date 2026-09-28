@@ -18,8 +18,8 @@ Reviewed By: Arsitek Berlisensi IAI Malang
 Last Updated: 2026-09-28
 Source Basis: Perbup Malang No 84 Tahun 2023 & Perda Kota Malang No 1 Tahun 2004
 Images:
-- biaya-desain-lahan-miring-malang-01.webp | Alt: Estimasi Biaya Desain Rumah di Lahan Miring Malang: Cut & Fill hingga Struktur
-- biaya-desain-lahan-miring-malang-02.webp | Alt: Detail Pekerjaan Teknis Konstruksi dan Struktur Lahan Miring Malang
+- biaya-desain-lahan-miring-malangwebp.webp | Alt: Estimasi Biaya Desain Rumah di Lahan Miring Malang: Cut & Fill hingga Struktur
+- biaya-desain-lahan-miring.webp | Alt: Detail Pekerjaan Teknis Konstruksi dan Struktur Lahan Miring Malang
 
 ---
 
