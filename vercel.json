@@ -84,6 +84,11 @@
       "permanent": true
     },
     {
+      "source": "/biaya-desain-lahan-miring-malang",
+      "destination": "/blog/biaya-desain-lahan-miring-malang",
+      "permanent": true
+    },
+    {
       "source": "/biaya-jasa-arsitek-bukaan-cahaya-alami-rumah-batu",
       "destination": "/blog/biaya-jasa-arsitek-bukaan-cahaya-alami-rumah-batu",
       "permanent": true
@@ -351,6 +356,11 @@
     {
       "source": "/portofolio-arsitek-malang",
       "destination": "/blog/portofolio-arsitek-malang",
+      "permanent": true
+    },
+    {
+      "source": "/prinsip-desain-rumah-tropis-minimalis-malang",
+      "destination": "/blog/prinsip-desain-rumah-tropis-minimalis-malang",
       "permanent": true
     },
     {
