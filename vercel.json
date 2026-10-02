@@ -299,6 +299,11 @@
       "permanent": true
     },
     {
+      "source": "/paket-jasa-arsitek",
+      "destination": "/blog/paket-jasa-arsitek",
+      "permanent": true
+    },
+    {
       "source": "/paket-jasa-arsitek-malang",
       "destination": "/blog/paket-jasa-arsitek-malang",
       "permanent": true
