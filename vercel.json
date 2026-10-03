@@ -124,6 +124,11 @@
       "permanent": true
     },
     {
+      "source": "/cara-mengurus-izin-bangunan-malang-simbg",
+      "destination": "/blog/cara-mengurus-izin-bangunan-malang-simbg",
+      "permanent": true
+    },
+    {
       "source": "/cara-menyusun-rab-jasa-arsitek-malang",
       "destination": "/blog/cara-menyusun-rab-jasa-arsitek-malang",
       "permanent": true
@@ -266,6 +271,11 @@
     {
       "source": "/kontrak-arsitek-malang",
       "destination": "/blog/kontrak-arsitek-malang",
+      "permanent": true
+    },
+    {
+      "source": "/kriteria-arsitek-profesional-malang-rab-akurat",
+      "destination": "/blog/kriteria-arsitek-profesional-malang-rab-akurat",
       "permanent": true
     },
     {
@@ -446,6 +456,11 @@
     {
       "source": "/tren-desain-villa-kontur-malang-proyek-sengkaling",
       "destination": "/blog/tren-desain-villa-kontur-malang-proyek-sengkaling",
+      "permanent": true
+    },
+    {
+      "source": "/tren-material-konstruksi-malang-2026-semen-bata",
+      "destination": "/blog/tren-material-konstruksi-malang-2026-semen-bata",
       "permanent": true
     }
   ]

@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -681,6 +681,30 @@
   <url>
     <loc>https://arsitekmalang.web.id/blog/paket-jasa-arsitek.html</loc>
     <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Kriteria Arsitek Profesional Malang untuk RAB Akurat -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/kriteria-arsitek-profesional-malang-rab-akurat.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Tren Material Konstruksi Malang 2026: Semen dan Bata -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/tren-material-konstruksi-malang-2026-semen-bata.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Cara Mengurus Izin Bangunan Malang Lewat SIMBG Tanpa Ribet -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/cara-mengurus-izin-bangunan-malang-simbg.html</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
