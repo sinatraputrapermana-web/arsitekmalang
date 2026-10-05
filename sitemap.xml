@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://arsitekmalang.web.id/blog.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -705,6 +705,22 @@
   <url>
     <loc>https://arsitekmalang.web.id/blog/cara-mengurus-izin-bangunan-malang-simbg.html</loc>
     <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Sanksi Bangun Rumah Tanpa PBG di Malang Raya -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/sanksi-bangun-rumah-tanpa-pbg-malang.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel: Kenapa Jasa Arsitek Malang Bersertifikat IAI Sangat Penting untuk Legalitas -->
+  <url>
+    <loc>https://arsitekmalang.web.id/blog/arsitek-malang-bersertifikat-iai-legalitas.html</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

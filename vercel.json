@@ -462,6 +462,16 @@
       "source": "/tren-material-konstruksi-malang-2026-semen-bata",
       "destination": "/blog/tren-material-konstruksi-malang-2026-semen-bata",
       "permanent": true
+    },
+    {
+      "source": "/sanksi-bangun-rumah-tanpa-pbg-malang",
+      "destination": "/blog/sanksi-bangun-rumah-tanpa-pbg-malang",
+      "permanent": true
+    },
+    {
+      "source": "/arsitek-malang-bersertifikat-iai-legalitas",
+      "destination": "/blog/arsitek-malang-bersertifikat-iai-legalitas",
+      "permanent": true
     }
   ]
 }
